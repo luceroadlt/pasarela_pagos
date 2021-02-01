@@ -2,7 +2,7 @@
 $host = "localhost";
 $db_name = "pasarelapagos";
 $username = "root";
-$password = "13070011";
+$password = "";
  
 try {
     $con = new PDO("mysql:host={$host};dbname={$db_name}", $username, $password);

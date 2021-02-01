@@ -1,0 +1,31 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Pagina de pago</TITLE>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</HEAD>
+
+<BODY>
+    <FORM ACTION=' https://pgw.ceca.es/tpvweb/tpv/compra.action' METHOD='POST' ENCTYPE='application/x-www-form-urlencoded'>
+        <INPUT NAME='MerchantID' TYPE=hidden VALUE='##MerchantID##'>
+        <INPUT NAME='AcquirerBIN' TYPE=hidden VALUE='##AcquirerBIN##'>
+        <INPUT NAME='TerminalID' TYPE=hidden VALUE='##TerminalID##'>
+        <INPUT NAME='URL_OK' TYPE=hidden VALUE='##URL_OK##'>
+        <INPUT NAME='URL_NOK' TYPE=hidden VALUE='##URL_NOK##'>
+        <INPUT NAME='Firma' TYPE=hidden VALUE='##Firma##'>
+        <INPUT NAME='Cifrado' TYPE=hidden VALUE='SHA2'>
+        <INPUT NAME='Num_operacion' TYPE=hidden VALUE='##Num_operacion##'>
+        <INPUT NAME='Importe' TYPE=hidden VALUE='##Importe##'>
+        <INPUT NAME='TipoMoneda' TYPE=hidden VALUE='978'>
+        <INPUT NAME='Exponente' TYPE=hidden VALUE='2'>
+        <INPUT NAME='Pago_soportado' TYPE=hidden VALUE='SSL'>
+        <INPUT NAME='Idioma' TYPE=hidden VALUE='1'>
+<INPUT NAME=' datos_acs_20' TYPE=hidden VALUE='## datos_acs_20 ##'>
+        <INPUT NAME='firma_acs_20' TYPE=hidden VALUE='## firma_acs_20##'>
+<CENTER>
+<INPUT TYPE='submit' VALUE='Comprar'>
+        </CENTER>
+    </FORM>
+</BODY>
+
+</HTML>
